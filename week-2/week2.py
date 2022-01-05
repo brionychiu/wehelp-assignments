@@ -77,8 +77,7 @@ def maxZeros(nums):
             total.append(sum)
             sum=0
     total.append(sum)        
-    total.sort(reverse=True)
-    print(total[0])
+    print(max(total))
 
 maxZeros([0, 1, 0, 0]) # 得到 2
 maxZeros([1, 0, 0, 0, 0, 1, 0, 1, 0, 0]) # 得到 4
