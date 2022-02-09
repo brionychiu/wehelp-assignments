@@ -34,18 +34,7 @@ def signup():
     member_db.commit()
     cursor.close()
     return redirect("/")
-    
-    # for a_account in cursor:
-    #     if a_account==account:
-    #         return redirect("/error?msg=帳號已經被註冊")
-    # with member_db.cursor() as cursor:
-    #     cursor.execute("SELECT `account` FROM `member_ship`;")
-    #     result=cursor.fetchall()
-    #     for a in result:
-    #         if a==account:
-    #             return redirect("/error?msg=帳號已經被註冊")
   
-
 @app.route("/signin",methods=["POST"])
 def signin():
     cursor = member_db.cursor()
