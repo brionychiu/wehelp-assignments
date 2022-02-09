@@ -44,8 +44,6 @@ def signin():
     result=cursor.fetchone()
     if result == None:
         return redirect("/error?msg=帳號或密碼輸入錯誤")
-    if account.strip()==''or password.strip()=='':
-        return redirect("/error?msg=請輸入帳號、密碼")
     session["account"]=result[0]
     session["name"]=result[2]
     cursor.close()
