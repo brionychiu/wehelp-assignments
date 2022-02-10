@@ -1,6 +1,7 @@
 from mysql.connector import pooling
 from flask import Flask,render_template,request,redirect,session
 
+#使用connection_pool取代直接連接database
 connection_pool = pooling.MySQLConnectionPool(pool_name="pynative_pool",
                                                   pool_size=5,
                                                   pool_reset_session=True,
@@ -42,18 +43,7 @@ def signup():
         cursor.close()
         connection_object.close()
     return redirect("/")
-    
-    # for a_account in cursor:
-    #     if a_account==account:
-    #         return redirect("/error?msg=帳號已經被註冊")
-    # with member_db.cursor() as cursor:
-    #     cursor.execute("SELECT `account` FROM `member_ship`;")
-    #     result=cursor.fetchall()
-    #     for a in result:
-    #         if a==account:
-    #             return redirect("/error?msg=帳號已經被註冊")
-  
-
+   
 @app.route("/signin",methods=["POST"])
 def signin():
     account=request.form["account"]
