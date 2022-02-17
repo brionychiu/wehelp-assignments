@@ -1,0 +1,27 @@
+.box_1{
+    height:500px;width:400px;background-color: rgb(233, 187, 187);
+    box-shadow:-5px 5px 8px 10px #ffe4e1;
+    margin-right: auto;margin-left: auto;margin-top:5%;
+    text-align: center;padding:30px;
+}
+.box_2{
+    height:600px;width:400px;background-color: #FFFF77;
+    box-shadow:-5px 5px 8px 10px palegoldenrod;
+    margin-right: auto;margin-left: auto;margin-top:5%;
+    text-align: center;padding:30px;
+}
+.box_3{
+    height:300px;width:400px;background-color: #e6e6fa;
+    box-shadow:-5px 5px 8px 10px #d8bfd8;
+    margin-right: auto;margin-left: auto;margin-top:5%;
+    text-align: center;padding:30px;
+}
+.text_1{
+    font-size:30px;font-weight:bold;
+}
+.text_2{
+    font-size:20px;margin-top:40px;font-weight:bold;
+}
+.text_3{
+    font-size:16px;margin-top:8px;
+}

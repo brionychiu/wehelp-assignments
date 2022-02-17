@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員頁面</title>
+    <link rel="stylesheet" type="text/css" href="week-7.css" media="all" />
+</head>
+<body>
+    <div class="box_2">
+        <div class="text_1">歡迎光臨，這是會員頁面</div>
+        <div class="text_2"> {{name}} , 歡迎登入系統</div>
+        <div class="text_3" ><a href="/signout">登出系統</a></div>
+        <div class="text_2" >查詢會員姓名</div>
+        <div class="text_3">     <input type="text" id="username"> <button type="submit" onclick="submit()">查詢</button></div> 
+        <div class="text_3" id="username_result"></div>
+        <div class="text_2">更新我的姓名</div>
+        <div class="text_3">     <input type="text" id="update_name"> <button type="submit" onclick="update()">更新</button></div> 
+        <div class="text_3" id="update_result"></div>
+        <img src="deer_icon.png" style="height: 30%;position:relative;bottom:-30px;"/>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
