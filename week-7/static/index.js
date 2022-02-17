@@ -39,18 +39,3 @@ function update(){
       });
 }
 
-
-// async function update(url, data) {
-//   const response = await fetch(url, {
-//         body: JSON.stringify(data),
-//         headers: {
-//             'content-type': 'application/json'
-//         },
-//         method: 'POST', // *GET, POST, PUT, DELETE, etc.
-//     });
-//     return await response.json(); // 輸出成 json
-// }
-// const username=document.getElementById("username").value;
-// update('http://127.0.0.1:3000/api/member',username)
-//   .then(data => console.log(data)) // JSON from `response.json()` call
-//   .catch(error => console.error(error))
