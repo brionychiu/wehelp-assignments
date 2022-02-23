@@ -3,6 +3,11 @@
 1. 了解 Grid 的基本操作。
 > CSS屬性的一種
 2. 利用 Grid 來完成第一週作業的前端排版。
+* 半成品(未做RWD切版，下面灰色部分沒有做得很完美，每個div都套用class，太費工夫)
+* display:inline-grid 跟 display:grid 差異[display:grid](https://www.w3schools.com/css/css_grid.asp)
+* grid-column: 1/span2 跟 grid-column: 1/2[span](https://www.w3schools.com/cssref/pr_grid-column.asp)
+* grid-template-areas:用點可以空一格-->實作無效
+* ![image](https://user-images.githubusercontent.com/94620926/155343885-8c1dcbda-869e-4e26-96c8-6a049f761e53.png)
 [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ### 主題三：AJAX 與 CORS
